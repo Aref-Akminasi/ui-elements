@@ -23,11 +23,12 @@
 .submit {
   background-color: $primary;
   color: $white;
-  padding: $base-padding * 2;
+  padding: $base-padding;
   width: 100%;
   font-size: $base-font-size;
   border: 0;
   cursor: pointer;
+  font-family: inherit;
   &:active {
     transform: scale(0.98);
   }
