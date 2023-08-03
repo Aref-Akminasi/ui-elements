@@ -1,4 +1,46 @@
+@use 'sass:math';
+$breakpoints: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1400px,
+);
+$grid-columns: 12;
+
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+@mixin grid($bp) {
+  @for $i from 1 through $grid-columns {
+    .col-#{$bp}-#{$i} {
+      width: math.div($i, $grid-columns) * 100%;
+    }
+  }
+}
+
+// The last rule is always applied
+
+@media (min-width: map-get($breakpoints, 'xl')) {
+  @include grid(xl);
+}
+
+@media (max-width: map-get($breakpoints, 'xl')) {
+  @include grid(xl);
+}
+
+@media (max-width: map-get($breakpoints, 'lg')) {
+  @include grid(lg);
+}
+
+@media (max-width: map-get($breakpoints, 'md')) {
+  @include grid(md);
+}
+
+@media (max-width: map-get($breakpoints, 'sm')) {
+  @include grid(sm);
 }
