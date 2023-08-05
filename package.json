@@ -1,6 +1,6 @@
 {
   "name": "ui-elements",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "UI Elements library",
   "main": "sass/index.scss",
   "scripts": {
@@ -15,10 +15,10 @@
     "scss",
     "gulp"
   ],
-  "devDependencies": {
+  "dependencies": {
     "gulp": "^4.0.2",
     "gulp-purgecss": "^5.0.0",
     "gulp-sass": "^5.1.0",
-    "sass": "^1.64.1"
+    "sass": "^1.64.2"
   }
 }
