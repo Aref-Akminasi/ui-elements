@@ -1,6 +1,6 @@
 {
   "name": "ui-elements",
-  "version": "1.0.8",
+  "version": "1.0.11",
   "description": "UI Elements library",
   "main": "sass/index.scss",
   "scripts": {
@@ -8,6 +8,13 @@
   },
   "author": "Aref Akminasi",
   "license": "ISC",
+  "keywords": [
+    "preprocessor",
+    "style",
+    "sass",
+    "scss",
+    "gulp"
+  ],
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-purgecss": "^5.0.0",

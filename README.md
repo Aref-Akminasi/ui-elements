@@ -12,13 +12,9 @@ UI Elements is a customizable, extensible, and open-source library. Leverage its
 - Cards
 - Form controls
 
-### Screenshots
-
-![](/screenshots/screenshot1.png)
-
 ### Links
 
-- Documentation: [Docs](https://aref-akminasi.github.io/ui-elements-docs/)
+- [Docs](https://aref-akminasi.github.io/ui-elements-docs/)
 
 ### Built with
 
